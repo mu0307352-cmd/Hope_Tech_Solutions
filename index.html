@@ -103,21 +103,38 @@
             padding: 15px 5%;
         }
 
-        .logo {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.5px;
-        }
+/* Logo Container */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+}
 
-        .logo span {
-            color: var(--light);
-            -webkit-text-fill-color: var(--light);
-        }
+/* Logo Image */
+.logo img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* "Hope" Text - Gradient Style */
+.logo .brand-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+}
+
+/* "Tech Solutions" Text - Light Color */
+.logo .brand-text span {
+    color: var(--light);
+    -webkit-text-fill-color: var(--light);
+}
 
         .nav-links {
             display: flex;
@@ -835,16 +852,20 @@
     <div class="bg-animation"></div>
 
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="logo">Hope <span>Tech Solutions</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="mobile-menu"><i class="fas fa-bars"></i></div>
-    </nav>
+<nav id="navbar">
+<div class="logo">
+    <img src="./hts logo.png" alt="Logo">
+    <span class="brand-text">Hope <span>Tech Solutions</span></span>
+</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+</nav>
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
